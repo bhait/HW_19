@@ -16,8 +16,30 @@
 
 </head>
 
+<style>
+/* RETURN TO TOP BUTTON    */
+#btnScrollToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: none;  
+  background-color: rgb(160, 160, 160);
+  color: black;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnScrollToTop:active {
+    background: rgb(100, 100, 100) ;
+}
+
+</style>
+
 <body>
-<!-- TOP NAV -->    
+<!-- TOP NAV     -->
     <nav>
         <div class="nav">
 
@@ -88,18 +110,24 @@
 
     <div class="copyright"> © Ben Hait 2022</div>
 
-<!-- RETURN TO TOP BUTTON -->    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- RETURN TO TOP BUTTON - W3 SCHOOLS     -->
+    <button onclick="topFunction()" id="btnScrollToTop" title="Go to top">
+        <i class="material-icons" style="font-size: 50px;">expand_less</i>
+    </button>
 
+    <!-- RETURN TO TOP BUTTON 
+    <button id="btnScrollToTop">
+        <i class="material-icons">expand_less</i>
+    </button> -->
 
-<!-- SCRIPT -->
+<!-- SCRIPT W3 SCHOOLS -->
     <script>
-        var mybutton = document.getElementById("myBtn");
+        var mybutton = document.getElementById("btnScrollToTop");
         
         window.onscroll = function() {scrollFunction()};
         
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
             mybutton.style.display = "block";
           } else {
             mybutton.style.display = "none";
