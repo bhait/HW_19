@@ -88,18 +88,18 @@ h1 {
 }
 
 .grid-container .Project2:hover {
-  background: rgb(100, 100, 100) ;
+  background: rgb(100, 100, 100);
 }
 
 .grid-container .Project3:hover {
-  background: rgb(100, 100, 100) ;
+  background: rgb(100, 100, 100);
 }
 
 .grid-container .Project4:hover {
-  background: rgb(100, 100, 100) ;
+  background: rgb(100, 100, 100);
 }
 
-.grid-container > div{
+.grid-container>div {
   padding-top: 37%;
   background-color: rgb(160, 160, 160);
 }
@@ -125,7 +125,7 @@ h3 {
   color: black;
 }
 
-.flex-icons a{
+.flex-icons a {
   color: black;
 
 }
@@ -133,6 +133,24 @@ h3 {
 .fa {
   padding: 20px;
   text-decoration: none;
+}
+
+/* RETURN TO TOP BUTTON    */
+#btnScrollToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: none;
+  /* background-color: rgb(160, 160, 160); */
+  outline: none;
+  cursor: pointer;
+}
+
+#btnScrollToTop:active {
+  background: rgb(160, 160, 160);
 }
 
 /* Copyright */

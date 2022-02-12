@@ -7,57 +7,34 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">    
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<style>
-/* RETURN TO TOP BUTTON    */
-#btnScrollToTop {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  border: none;  
-  background-color: rgb(160, 160, 160);
-  color: black;
-  outline: none;
-  cursor: pointer;
-}
-
-#btnScrollToTop:active {
-    background: rgb(100, 100, 100) ;
-}
-
-</style>
-
 <body>
-<!-- TOP NAV     -->
+    <!-- TOP NAV     -->
     <nav>
         <div class="nav">
 
             <div class="header-left">
-                <a href="#" >
+                <a href="#">
                     <img src="./images/logo.png" alt="Bens logo" width="130px"></a>
             </div>
 
             <div class="header-right">
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
-                <a href="#archive">Archive</a>
+                <a href="#contact">Contact</a>
             </div>
 
         </div>
     </nav>
 
-<!-- TEXT HEADER -->
+    <!-- TEXT HEADER -->
     <section>
         <p><span>
                 Hello,
@@ -68,35 +45,35 @@
         </h1>
     </section>
 
-<!-- GRID -->
+    <!-- GRID -->
     <div class="grid-container">
 
         <div class="Project1">
-        <h3>Project 1</h3>
+            <h3>Project 1</h3>
         </div>
 
         <div class="Project2">
-        <h3>Project 2</h3>
+            <h3>Project 2</h3>
         </div>
 
         <div class="Project3">
-        <h3>Project 3</h3>
+            <h3>Project 3</h3>
         </div>
 
         <div class="Project4">
-        <h3>Project 4</h3>
+            <h3>Project 4</h3>
         </div>
 
         <div class="Project4">
             <h3>Project 5</h3>
-            </div>
+        </div>
 
-                <div class="Project4">
+        <div class="Project4">
             <h3>Project 6</h3>
-            </div>    
+        </div>
     </div>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <div class="flex-icons">
         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" i class="fa fa-linkedin"
             style="font-size: 18px;"></i></a>
@@ -110,35 +87,31 @@
 
     <div class="copyright"> © Ben Hait 2022</div>
 
-<!-- RETURN TO TOP BUTTON - W3 SCHOOLS     -->
+    <!-- RETURN TO TOP BUTTON - W3 SCHOOLS     -->
     <button onclick="topFunction()" id="btnScrollToTop" title="Go to top">
         <i class="material-icons" style="font-size: 50px;">expand_less</i>
     </button>
 
-    <!-- RETURN TO TOP BUTTON 
-    <button id="btnScrollToTop">
-        <i class="material-icons">expand_less</i>
-    </button> -->
 
-<!-- SCRIPT W3 SCHOOLS -->
+    <!-- SCRIPT W3 SCHOOLS -->
     <script>
         var mybutton = document.getElementById("btnScrollToTop");
-        
-        window.onscroll = function() {scrollFunction()};
-        
+
+        window.onscroll = function () { scrollFunction() };
+
         function scrollFunction() {
-          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
+            if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-        
+
         function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-        </script>
+    </script>
 
 </body>
 
